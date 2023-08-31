@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário de Admissão Veterinária</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Formulário de Admissão Veterinária</h1>
+    <form>
+  
+        <h2>Dados Gerais</h2>
+        <label>Número de identificação:</label>
+        <input type="number" name="numero">
+        <label>Nome:</label>
+        <input type="text" name="nome">
+        <label>Idade:</label>
+        <input type="number" name="idade">
+        <label>Espécie:</label>
+        <select name="espécie">
+            <option value="canina">Canina</option>
+            <option value="felina">Felina</option>
+        </select>
+        <label>Sexo:</label>
+        <select name="sexo">
+            <option value="macho">Macho</option>
+            <option value="femea">Fêmea</option>
+        </select>
+        <label>Raça:</label>
+        <input type="text" name="raca">
+        <label>Pelagem:</label>
+        <input type="text" name="pelagem">
+        <label>Porte:</label>
+        <input type="text" name="porte">
+        <label>Microchip:</label>
+        <input type="text" name="microchip">
+      
+        
+    
+        <h2>Histórico</h2>
+        <label for="castrado">Castrado</label>
+        <select id="castrado" name="sexo">
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+      </select>
+        <br>
+        <label>Histórico de procedimentos cirúrgicos/anestésicos:</label>
+        <textarea name="historico_procedimentos" rows="4"></textarea>
+        <label>Enfermidades prévias:</label>
+        <textarea name="enfermidades_previas" rows="4"></textarea>
+        <label>Tratamento crônico:</label>
+        <textarea name="tratamento_cronico" rows="4"></textarea>
+        <label>Alergia? (dieta/medicamentos):</label>
+        <input type="text" name="alergia">
+        <label>Dieta:</label>
+        <input type="text" name="dieta">
+        <label>Vacinação:</label>
+        <input type="text" name="vacinacao">
+      
+
+        
+        <h2>Quadro Atual</h2>
+        <label>Veterinário responsável:</label>
+        <input type="text" name="veterinario_responsavel" placeholder="Nome do veterinário que está admitindo ou do colega">
+        <label>Sintomatologia:</label>
+        <textarea name="sintomatologia" rows="4" placeholder="Descrição detalhada dos sintomas (unir informação passada pelo colega e do tutor na hora da admissão)"></textarea>
+        <label>Tratamento:</label>
+        <textarea name="tratamento" rows="4" placeholder="Tratamento atual (prescrições e/ou descrição passada pelo colega do que ele fez até agora )"></textarea>
+        <label>Exames:</label>
+        <textarea name="exames" rows="4" placeholder="Anexo de exames recentes/ exames realizados com o colega antes de encaminhar"></textarea>
+        <label>Suspeita Diagnóstica:</label>
+        <input type="text" name="suspeita_diagnostica">
+        <label>Parâmetros pré admissão:</label>
+        <textarea name="parametro_preadmissao" rows="4" placeholder="Realizar parâmetros básicos (pressão  temperatura  FC  FR  Avaliação de dor) antes de admitir.
+         Nesses parâmetros o vet consegue detectar alterações em parametros nao esperados, assim ali ele já pode solicitar mais exames,procedimentos e ou medicações.">
+        </textarea>
+        <label>Data de Admissão:</label>
+        <input type="text" name="data_admissao">
+        <br>
+        <div class="button">
+        <button> Enviar Formulário</button>  
+        </div>
+        </form>
+</div>
+</body>
+</html>
